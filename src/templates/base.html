@@ -1,15 +1,20 @@
+{% load staticfiles %}
 <!--DOCTYPE html -->
 <html>
 <head>
 	<title>{% block head_title %}Django_Blog{% endblock head_title %}</title>
 </head>
+<link rel="stylesheet" href='{% static "css/base.css" %}' />
 <style>
 	{% block style %} {% endblock style %}
 </style>
+</head>
 <body>
 {%include "messages_display.html" %}
 <div class='container'>
 	{% block content %}{% endblock content %}
 </div>
+
+<img src= ' {% static "img/beach.jpg" %} ' />
 </body>
-</html>
+</html> 
