@@ -1,0 +1,15 @@
+<!--DOCTYPE html -->
+<html>
+<head>
+	<title>{% block head_title %}Django_Blog{% endblock head_title %}</title>
+</head>
+<style>
+	{% block style %} {% endblock style %}
+</style>
+<body>
+{%include "messages_display.html" %}
+<div class='container'>
+	{% block content %}{% endblock content %}
+</div>
+</body>
+</html>
